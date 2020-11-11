@@ -1,0 +1,24 @@
+{
+  "defaultCommandTimeout": 60000,
+  "chromeWebSecurity": false,
+  "baseUrl": "https://pokeapi.co/api/v2/pokemon",
+  "video": false,
+  "numTestsKeptInMemory": 5,
+  "viewportWidth": 1400,
+  "viewportHeight": 660,
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "cypress/results/mocha",
+    "quiet": true,
+    "overwrite": false,
+    "html": false,
+    "json": true,
+    "timestamp": "mmddyyyy_HHMMss",
+    "color": "#0000FF",
+    "code": false,
+    "charts": true
+  },
+  "trashAssetsBeforeRuns": false,
+  "screenshotsFolder": "cypress/results/mocha/assets",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+}
