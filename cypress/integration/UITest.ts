@@ -1,12 +1,12 @@
 //<reference types="cypress" />
-import {BookADemoObj} from '../support/ObjectRepository/Objects'
+import {KmartObj} from '../support/ObjectRepository/Objects'
 
-describe('BookaDemo', () => {
-      it('BookaDemo', () => {
-        cy.visit('https://identitii.com/')
+describe('KmartUI', () => {
+      it('KmartUI', () => {
+        cy.visit('https://kmart.com.au/')
         cy.fixture('identitii/testsample.json').then(testdata => {
          
-        BookADemoObj.BookADemoButton().click();
+        KmartObj.BookADemoButton().click();
           
         cy.url().should('contain', )
         });
