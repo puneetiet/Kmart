@@ -4,13 +4,12 @@ pipeline {
     stages {
         stage('checkout') {
         steps{
-            checkout scm
+            echo 'Git checkout...'
         }
       }
 
         stage('Setup') {
             steps {
-            bat 'npm install'
             bat 'npx cypress verify'
             }
         }
