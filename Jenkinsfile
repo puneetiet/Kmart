@@ -10,18 +10,18 @@ pipeline {
 
         stage('Setup') {
             steps {
-            sh 'npm install'
-            sh 'npx cypress verify'
+            bat 'npm install'
+            bat 'npx cypress verify'
             }
         }
         stage('Execution') {
             steps {
-                sh 'node runParallel.js'
+                bat 'node runParallel.js'
             }
         }
         stage('Report') {
             steps {
-                sh "node report.js"
+                bat "node report.js"
                 archiveArtifacts artifacts: 'cypress/results/**/*.*'
             }
         }
