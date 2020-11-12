@@ -14,9 +14,10 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
+// eslint-disable-next-line import/extensions
 import './commands';
 
-require('cypress-xpath');
-require('cypress-commands');
+// require('cypress-xpath');
+// require('cypress-commands');
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

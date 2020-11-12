@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Execution') {
             steps {
-                bat 'node runParallel.js'
+                bat 'node runner.js'
             }
         }
         stage('Report') {

@@ -1,6 +1,6 @@
 export const KmartObj = {
-  BookADemoButton() {
-    return cy.get('a#book-demo');
+  pageObject(pageName: string) {
+    return cy.get('.has-submenu.level1').children(`a:contains('${pageName}')`);
   },
 };
 

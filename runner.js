@@ -1,7 +1,7 @@
-const ls = require('ls');
+
 const cypress = require('cypress');
 const yargs = require('yargs');
-const rm = require('rimraf');
+
 const glob = require('glob');
 const pLimit = require('p-limit');
 const cypressConfig = require('./cypress');

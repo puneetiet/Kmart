@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "@cypress/webpack-preprocessor": "^4.1.0",
-    
     "@typescript-eslint/parser": "^1.11.0",
     "accounting": "^0.4.1",
     "cypress-commands": "^0.2.0",
