@@ -2,19 +2,25 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('checkout') {
+        checkout scm
+      }
+
+        stage('Setup') {
             steps {
-                echo 'Building..'
+            sh 'npm install'
+            sh 'npx cypress verify'
             }
         }
-        stage('Test') {
+        stage('Execution') {
             steps {
-                echo 'Testing..'
+                sh 'node runParallel.js'
             }
         }
-        stage('Deploy') {
+        stage('Report') {
             steps {
-                echo 'Deploying....'
+                sh "node report.js"
+                archiveArtifacts artifacts: 'cypress/results/**/*.*'
             }
         }
     }

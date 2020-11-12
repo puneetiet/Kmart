@@ -17,7 +17,7 @@ const argv = yargs
     spec: {
       alias: 's',
       describe: 'run test with specific spec file',
-      default: 'cypress/integration/HEMSingle_Dep0to3/*.ts',
+      default: 'cypress/integration/*.ts',
     },
     limit: {
       alias: 'l',
